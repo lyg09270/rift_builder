@@ -1,0 +1,32 @@
+{
+  "brief": {
+    "style": "控制；玩家明确希望接近万智牌蓝黑康杀的体验",
+    "win_condition": {"status": "proposed", "text": "通过反制、解场与补牌消耗对手，再以少量受保护的单位占场得分"},
+    "operating_plan": {"status": "proposed", "text": "前期保留互动资源并阻止关键威胁；中期用高效交换和补牌积累优势；后期保护得分单位"},
+    "core_cards": {"status": "undecided", "selected": []},
+    "constraints": {"required_cards": [], "excluded_cards": [], "collection": "unknown", "budget": "unknown", "complexity_tolerance": "unknown", "card_pool": "本地完整卡池；玩家是否限制系列待确认"}
+  },
+  "preferences": {
+    "confirmed": ["希望体验万智牌蓝黑康杀式控制"],
+    "context": "从蓝紫英雄讨论转入打法优先；蓝紫兴趣不等于英雄或颜色锁定",
+    "unknown": ["具体英雄", "Champion", "是否限制系列", "收藏与预算"]
+  },
+  "identity": {
+    "status": "undecided",
+    "candidate_legends": [
+      {"card": "VEN-151", "name": "Mel, Soul's Reflection", "rationale": "赋能后可消耗状态减战力，适合考察削弱解场控制；需要机制支撑"},
+      {"card": "SFD-199", "name": "Ezreal, Prodigal Explorer", "rationale": "一回合两次选择敌方单位或装备后可抽牌，适合干扰续航；反制法术本身不满足这个触发条件"}
+    ],
+    "selected_legend": null,
+    "selected_champion": null
+  },
+  "research": {
+    "observed_examples": ["SFD-136 Hard Bargain：对方不支付额外2能量则反制，可重复", "UNL-131 Abandon：反制后返回手牌，并Predict", "UNL-063 Eclipse：反应，减4战力并Predict", "SFD-066 Frigid Touch：反应，减2战力，可重复", "OGN-083 Consult the Past：反应抽2，带Hidden"],
+    "rules_as_of": "2026-10-09",
+    "conclusions": "已确认蓝紫有反制、战力削弱与反应补牌工具；尚未验证完整套牌或评估实战强度"
+  },
+  "active_module_id": null,
+  "modules": [],
+  "pending_questions": ["优先选择梅尔的削弱解场方向，还是EZ的干扰补牌方向？"],
+  "resume": {"next_action": "让玩家选择传奇方向；选定后比较对应Champion，再确认四项构筑简报"}
+}

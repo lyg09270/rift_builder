@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "name": "Rengar Radiance tempo",
+  "rules_profile": "standard-constructed",
+  "strategy": {
+    "style": "快攻/节奏",
+    "win_condition": "用低费单位持续争夺战场，利用战斗增益、移动和压制牌制造连续得分窗口。",
+    "operating_plan": "前期按曲线铺设单位，中期以反应牌和高效率单位赢下关键交战；保持双战场压力，避免把资源全部投入单点。",
+    "core_cards": ["UNL-183", "SFD-025", "UNL-184", "RAD-070"]
+  },
+  "legend": "UNL-183",
+  "chosen_champion": "SFD-025",
+  "main_deck": [
+    {"code": "SFD-025", "quantity": 2},
+    {"code": "RAD-081", "quantity": 1},
+    {"code": "OGN-132", "quantity": 3},
+    {"code": "RAD-085", "quantity": 1},
+    {"code": "UNL-021", "quantity": 3},
+    {"code": "RAD-070", "quantity": 3},
+    {"code": "UNL-002", "quantity": 3},
+    {"code": "UNL-112", "quantity": 3},
+    {"code": "UNL-097", "quantity": 3},
+    {"code": "UNL-114", "quantity": 2},
+    {"code": "OGN-012", "quantity": 3},
+    {"code": "OGN-136", "quantity": 3},
+    {"code": "SFD-097", "quantity": 3},
+    {"code": "UNL-028", "quantity": 1},
+    {"code": "RAD-007", "quantity": 2},
+    {"code": "VEN-083", "quantity": 1},
+    {"code": "OGN-156", "quantity": 1},
+    {"code": "UNL-184", "quantity": 2}
+  ],
+  "battlefields": [
+    {"code": "SFD-207", "quantity": 1},
+    {"code": "SFD-217", "quantity": 1},
+    {"code": "UNL-215", "quantity": 1}
+  ],
+  "runes": [
+    {"code": "OGN-126", "quantity": 7},
+    {"code": "OGN-007", "quantity": 5}
+  ],
+  "sideboard": [
+    {"code": "OGN-026", "quantity": 1},
+    {"code": "VEN-015", "quantity": 1},
+    {"code": "VEN-085", "quantity": 1},
+    {"code": "SFD-021", "quantity": 1},
+    {"code": "RAD-085", "quantity": 1},
+    {"code": "RAD-013", "quantity": 2},
+    {"code": "UNL-028", "quantity": 1},
+    {"code": "RAD-007", "quantity": 1},
+    {"code": "OGN-156", "quantity": 1}
+  ]
+}

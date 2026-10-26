@@ -1,0 +1,32 @@
+{
+  "profile": "standard-constructed",
+  "as_of": "2026-10-09",
+  "effective_from": "2026-10-16",
+  "main_deck_size": 40,
+  "rune_deck_size": 12,
+  "battlefield_count": 3,
+  "sideboard_max": 10,
+  "copy_limit": 3,
+  "signature_limit": 3,
+  "legal_sets": ["OGS", "OGN", "SFD", "UNL", "VEN", "RAD"],
+  "banned_cards": [
+    "Called Shot",
+    "Ekko, Recurrent",
+    "Draven, Vanquisher",
+    "Fight or Flight",
+    "Scrapheap",
+    "Stealthy Pursuer",
+    "Stacked Deck"
+  ],
+  "banned_battlefields": [
+    "The Arena's Greatest",
+    "Aspirant's Climb",
+    "Dreaming Tree",
+    "Obelisk of Power",
+    "Reaver's Row"
+  ],
+  "sources": [
+    "https://playriftbound.com/en-us/rules-hub/",
+    "https://cmsassets.rgpub.io/sanity/files/dsfx7636/news_live/861752822d217edf37d9febaeaf77a7d924c1bb6.pdf"
+  ]
+}

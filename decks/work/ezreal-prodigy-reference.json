@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "name": "Ezreal Prodigy - supplied reference",
+  "rules_profile": "standard-constructed",
+  "strategy": {
+    "style": "Value control with bounce and replay engines",
+    "win_condition": "Use repeated resource advantage and removal to establish units at battlefields, defend scoring positions with Vex, and create conquest windows with Thousand-Tailed Watcher.",
+    "operating_plan": "Reuse enter-play effects with Pack of Wonders and Star-Crossed; turn enemy-targeting interaction into Legend draws; turn Treasure Trove and Gold into resources; convert tempo into battlefield points.",
+    "core_cards": ["SFD-199", "SFD-149", "OGN-181", "SFD-140", "UNL-121", "OGN-186", "UNL-150", "OGN-116"]
+  },
+  "legend": "SFD-199",
+  "chosen_champion": "SFD-149",
+  "main_deck": [
+    {"code":"SFD-149","quantity":1},
+    {"code":"SFD-080","quantity":3},
+    {"code":"UNL-121","quantity":3},
+    {"code":"UNL-073","quantity":3},
+    {"code":"SFD-140","quantity":3},
+    {"code":"OGN-169","quantity":3},
+    {"code":"SFD-136","quantity":1},
+    {"code":"OGN-181","quantity":3},
+    {"code":"OGN-105","quantity":1},
+    {"code":"UNL-078","quantity":1},
+    {"code":"UNL-128","quantity":3},
+    {"code":"OGN-095","quantity":3},
+    {"code":"UNL-138","quantity":2},
+    {"code":"OGN-116","quantity":2},
+    {"code":"OGN-186","quantity":1},
+    {"code":"UNL-070","quantity":1},
+    {"code":"UNL-150","quantity":3},
+    {"code":"SFD-070","quantity":3}
+  ],
+  "battlefields": [
+    {"code":"UNL-212","quantity":1},
+    {"code":"OGN-287","quantity":1},
+    {"code":"OGN-295","quantity":1}
+  ],
+  "runes": [
+    {"code":"OGN-166","quantity":6},
+    {"code":"OGN-089","quantity":6}
+  ],
+  "sideboard": [
+    {"code":"OGN-179","quantity":1},
+    {"code":"UNL-132","quantity":1},
+    {"code":"SFD-136","quantity":1},
+    {"code":"UNL-143","quantity":1},
+    {"code":"OGN-192","quantity":1},
+    {"code":"SFD-074","quantity":1},
+    {"code":"VEN-102","quantity":2},
+    {"code":"UNL-070","quantity":2}
+  ]
+}

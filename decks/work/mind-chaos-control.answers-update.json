@@ -1,0 +1,86 @@
+{
+  "research": {
+    "observed_examples": [
+      "SFD-136 Hard Bargain：对方不支付额外2能量则反制，可重复",
+      "UNL-131 Abandon：反制后返回手牌，并Predict",
+      "UNL-063 Eclipse：反应，减4战力并Predict",
+      "SFD-066 Frigid Touch：反应，减2战力，可重复",
+      "OGN-083 Consult the Past：反应抽2，带Hidden"
+    ],
+    "rules_as_of": "2026-10-09",
+    "conclusions": "查到了具体得分手段与终结单位；尚未完成资源论证、完整牌表验证或强度测试，不能宣称拥有必然的后期优势",
+    "win_condition_candidates": [
+      {
+        "id": "protected-finisher",
+        "status": "proposed",
+        "cards": [
+          "UNL-147",
+          "OGN-116"
+        ],
+        "path": "站稳局面后，用大型单位建立场面并持续征服或驻守得分；康杀保护得分回合",
+        "evidence": "Baron Nashor 10E/3P，12战力，不能被敌方法术和能力选择，并强化其他友军；Thousand-Tailed Watcher 7E/1P，7战力，可加速，入场使敌军本回合减3战力且最低为1",
+        "unresolved": [
+          "大型单位的部署资源与留费是否可行",
+          "前期防守与转入得分的时机",
+          "不把不能被选择等同于无敌"
+        ]
+      },
+      {
+        "id": "activated-points",
+        "status": "proposed",
+        "cards": [
+          "SFD-088"
+        ],
+        "path": "Renata Glasc 位于战场时，可通过付费抽牌或主动得分；以保护她的场面为计划",
+        "evidence": "5E单位，4战力；抽牌能力1E/1P；得分能力4E/4P加横置，得1分；两项能力仅在战场可用",
+        "unresolved": [
+          "主动得分成本很高",
+          "得分同时保留互动资源的可行性",
+          "保护4战力单位的投入",
+          "终局得分限制需核对本地规则来源"
+        ]
+      }
+    ],
+    "large_unit_answers": {
+      "scope": "Mind/Chaos card pool; no cards selected or added to draft",
+      "observed": [
+        {
+          "card": "OGN-180",
+          "name": "Fading Memories",
+          "energy": 4,
+          "power": 1,
+          "role": "Delayed kill; give Temporary to a unit at a battlefield; dies at start of controller Beginning Phase before scoring; not immediate"
+        },
+        {
+          "card": "OGN-172",
+          "name": "Rebuke",
+          "energy": 2,
+          "power": 2,
+          "role": "Action; return a unit at a battlefield to owner hand; no Might limit; not permanent removal"
+        },
+        {
+          "card": "UNL-128",
+          "name": "Star-Crossed",
+          "energy": 3,
+          "power": 1,
+          "role": "Reaction; return friendly and enemy unit to owner hands; requires friendly-unit component"
+        },
+        {
+          "card": "UNL-066",
+          "name": "Moonlight Affliction",
+          "energy": 7,
+          "power": 0,
+          "role": "Reaction; -10 Might this turn; effect is stat reduction, not explicit kill"
+        },
+        {
+          "card": "SFD-147",
+          "name": "Downwell",
+          "energy": 8,
+          "power": 2,
+          "role": "Return all units and gear to owner hands; symmetric reset, not kill"
+        }
+      ],
+      "limits": "Cannot select untargetable enemies such as Baron Nashor with spells that choose them; local rules profile is deck legality only, no comprehensive zero-Might death rule was available, so no claim that Might reduction alone kills."
+    }
+  }
+}

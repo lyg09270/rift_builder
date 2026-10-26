@@ -1,0 +1,6 @@
+interface:
+  display_name: "Riftbound Deck MVP"
+  short_description: "本地全文牌库驱动的组卡、规则校验与 RiftAtlas 导出"
+  default_prompt: "Use $riftbound-deck-mvp to build a legal Riftbound deck, explain its strategy, and export it for RiftAtlas."
+policy:
+  allow_implicit_invocation: true

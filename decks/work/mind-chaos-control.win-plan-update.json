@@ -1,0 +1,112 @@
+{
+  "brief": {
+    "style": "控制；玩家明确希望接近万智牌蓝黑康杀的体验",
+    "win_condition": {
+      "status": "undecided",
+      "text": "先比较明确终结手段与得分路径；先前的少量单位占场仅是尚未论证的提案"
+    },
+    "operating_plan": {
+      "status": "undecided",
+      "text": "由选定的获胜机制反推资源、防守与康杀配置"
+    },
+    "core_cards": {
+      "status": "undecided",
+      "selected": []
+    },
+    "constraints": {
+      "required_cards": [],
+      "excluded_cards": [],
+      "collection": "unknown",
+      "budget": "unknown",
+      "complexity_tolerance": "unknown",
+      "card_pool": "本地完整卡池；玩家是否限制系列待确认"
+    }
+  },
+  "identity": {
+    "status": "undecided",
+    "candidate_legends": [
+      {
+        "card": "VEN-151",
+        "name": "Mel, Soul's Reflection",
+        "rationale": "赋能后可消耗状态减战力，适合考察削弱解场控制；需要机制支撑"
+      },
+      {
+        "card": "SFD-199",
+        "name": "Ezreal, Prodigal Explorer",
+        "rationale": "一回合两次选择敌方单位或装备后可抽牌，适合干扰续航；反制法术本身不满足这个触发条件"
+      }
+    ],
+    "selected_legend": null,
+    "selected_champion": null,
+    "selection_deferred_until": "先确定并论证获胜计划"
+  },
+  "core_plan": {},
+  "skeleton": {},
+  "draft_deck": {},
+  "locked_cards": [],
+  "rejected_cards": [],
+  "pending_questions": [
+    "先比较大型终结者占场得分与Renata主动得分，玩家选择获胜路径后再选择传奇"
+  ],
+  "preferences": {
+    "confirmed": [
+      "希望体验万智牌蓝黑康杀式控制",
+      "获胜计划是核心；康杀仅是执行与保护计划的打法，应先论证如何赢，再选英雄和互动牌"
+    ],
+    "context": "从蓝紫英雄讨论转入打法优先；蓝紫兴趣不等于英雄或颜色锁定",
+    "unknown": [
+      "具体英雄",
+      "Champion",
+      "是否限制系列",
+      "收藏与预算"
+    ]
+  },
+  "research": {
+    "observed_examples": [
+      "SFD-136 Hard Bargain：对方不支付额外2能量则反制，可重复",
+      "UNL-131 Abandon：反制后返回手牌，并Predict",
+      "UNL-063 Eclipse：反应，减4战力并Predict",
+      "SFD-066 Frigid Touch：反应，减2战力，可重复",
+      "OGN-083 Consult the Past：反应抽2，带Hidden"
+    ],
+    "rules_as_of": "2026-10-09",
+    "conclusions": "查到了具体得分手段与终结单位；尚未完成资源论证、完整牌表验证或强度测试，不能宣称拥有必然的后期优势",
+    "win_condition_candidates": [
+      {
+        "id": "protected-finisher",
+        "status": "proposed",
+        "cards": [
+          "UNL-147",
+          "OGN-116"
+        ],
+        "path": "站稳局面后，用大型单位建立场面并持续征服或驻守得分；康杀保护得分回合",
+        "evidence": "Baron Nashor 10E/3P，12战力，不能被敌方法术和能力选择，并强化其他友军；Thousand-Tailed Watcher 7E/1P，7战力，可加速，入场使敌军本回合减3战力且最低为1",
+        "unresolved": [
+          "大型单位的部署资源与留费是否可行",
+          "前期防守与转入得分的时机",
+          "不把不能被选择等同于无敌"
+        ]
+      },
+      {
+        "id": "activated-points",
+        "status": "proposed",
+        "cards": [
+          "SFD-088"
+        ],
+        "path": "Renata Glasc 位于战场时，可通过付费抽牌或主动得分；以保护她的场面为计划",
+        "evidence": "5E单位，4战力；抽牌能力1E/1P；得分能力4E/4P加横置，得1分；两项能力仅在战场可用",
+        "unresolved": [
+          "主动得分成本很高",
+          "得分同时保留互动资源的可行性",
+          "保护4战力单位的投入",
+          "终局得分限制需核对本地规则来源"
+        ]
+      }
+    ]
+  },
+  "active_module_id": null,
+  "modules": [],
+  "resume": {
+    "next_action": "先确定获胜路径，再论证部署核心与保留互动所需资源；暂不推进英雄选择"
+  }
+}

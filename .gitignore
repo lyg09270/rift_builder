@@ -1,0 +1,33 @@
+# Python environments and generated caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Temporary test and smoke projects
+.deck-project-test-*/
+.smoke-deck-projects/
+
+# Local player projects; keep checked-in examples under decks/
+decks/active/
+decks/archive/
+decks/.data_versions/
+
+# Local credentials and machine files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+Thumbs.db
+.DS_Store
+
+# SQLite runtime files (the bundled card database is tracked)
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
