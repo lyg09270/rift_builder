@@ -1,0 +1,11 @@
+{
+  "url": "https://openrift.app/api/v1/catalog",
+  "fetched_at": "2026-10-27T15:23:01.658392+00:00",
+  "sha256": "ad521068ff70def757a00ff18f049583e1e5dffdc3e0152515eb90007b54ca05",
+  "headers": {
+    "ETag": "\"e71e9978b95e0496a4adce462a33b609\"",
+    "Last-Modified": null,
+    "Cache-Control": "public, max-age=3600, stale-while-revalidate=86400",
+    "Content-Type": "application/json"
+  }
+}

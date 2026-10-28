@@ -1,0 +1,23 @@
+{
+  "api_functions": 73,
+  "calls": {
+    "r2": 2338,
+    "targeted": 38
+  },
+  "unbound": [],
+  "cards": 1106,
+  "raw_fields": 5542,
+  "targeted_sections": 12,
+  "local_links": 4795,
+  "bad_links": [],
+  "pending": [
+    201,
+    286,
+    338,
+    453,
+    541
+  ],
+  "api_sha256": "e71df1d2bc6035fe20e24f8b2a16f8daf3062e26bc267d4687657bda99155250",
+  "source_sha256": "ad521068ff70def757a00ff18f049583e1e5dffdc3e0152515eb90007b54ca05",
+  "v2_archive_unchanged": true
+}

@@ -1,0 +1,13 @@
+{
+  "primitive_signatures": 35,
+  "v4_mapped_interfaces": 60,
+  "mapped_primitive_names": 35,
+  "example_calls_checked": 4,
+  "local_links_checked": 19,
+  "broken_links": [],
+  "pdf_source_copy_identical": true,
+  "pdf_sha256": "90da58d4c3fa121378fbb7da688f3cc4bd90607d1f8721f025d7e2e0fe2f9014",
+  "current_v4_unchanged": true,
+  "card_catalog_unchanged": true,
+  "note": "Static document checks and boundary-card reasoning; no primitive runtime, test suite or full-library P1 semantic review."
+}

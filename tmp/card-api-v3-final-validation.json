@@ -1,0 +1,35 @@
+{
+  "cards": 1106,
+  "unique_cards": 1106,
+  "contiguous_numbers": true,
+  "text_groups": 2771,
+  "errata": 73,
+  "source_printings": 9039,
+  "api_functions": 71,
+  "ops_calls": 2335,
+  "signature_errors": [],
+  "unbound_parameters": [],
+  "cost_selection_errors": [],
+  "old_function_calls": [],
+  "original_fields": 5542,
+  "original_field_errors": [],
+  "exactly_one_r3_section": true,
+  "local_links_checked": 7898,
+  "broken_local_links": [],
+  "source_sha256": "ad521068ff70def757a00ff18f049583e1e5dffdc3e0152515eb90007b54ca05",
+  "api_sha256": "2530366c3f814b7f77f992ffe36c7c5bf3a0ad5fa23812de34119a6ea4dd03a3",
+  "v2_sha256": "d29a830f08fc455c8d1ed4eafa91bf32e38151568627d3c5361f1f053cbff015",
+  "v21_sha256": "e71df1d2bc6035fe20e24f8b2a16f8daf3062e26bc267d4687657bda99155250",
+  "counts": {
+    "confirmed": 1059,
+    "uncovered": 40,
+    "verify": 7
+  },
+  "data_cards": 49,
+  "language_difference_cards": 51,
+  "api_used_functions": 70,
+  "api_unused_functions": [
+    "reorder"
+  ],
+  "note": "Document and API contract checks only; no runtime game execution, test suite, independent semantic truth set, or full image verification."
+}

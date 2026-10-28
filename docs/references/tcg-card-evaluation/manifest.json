@@ -1,0 +1,219 @@
+{
+  "verified_at_utc": "2026-10-26T15:37:09.750650+00:00",
+  "validation": "Original PDF signature, pypdf parsing, page count, first-page title check, SHA-256; no edits to PDFs",
+  "papers": [
+    {
+      "id": "resource-scale-2019",
+      "title": "Learning a Resource Scale for Collectible Card Games",
+      "authors": [
+        "Gianlucca Zuin",
+        "Adriano Veloso"
+      ],
+      "year": 2019,
+      "venue": "IEEE Conference on Games (CoG)",
+      "doi": "10.1109/CIG.2019.8847946",
+      "filename": "2019-learning-a-resource-scale.pdf",
+      "topic": "学习属性、效果文本与资源费用之间的关系；建立身材和效果的费用参照。",
+      "limitation": "预测印刷费用，不直接预测入选价值或获胜贡献。",
+      "priority": "核心，建议第一个阅读",
+      "source_candidates": [
+        "https://ieee-cog.org/2019/papers/paper_119.pdf"
+      ],
+      "bytes": 2795056,
+      "pages": 8,
+      "sha256": "8a44e4eeb49409c16374717c5cb295a1fd53a3e667c5ef6ee5c6c33675b53706",
+      "pdf_title": "",
+      "first_page_excerpt": "Learning a Resource Scale for Collectible Card Games Gianlucca Zuin Departamento de Ci ˆencia da Computac ¸˜ao Universidade Federal de Minas Gerais Belo Horizonte, Brazil gzuin@dcc.ufmg.br Adriano Veloso Departamento de ",
+      "status": "downloaded",
+      "source_url": "https://ieee-cog.org/2019/papers/paper_119.pdf",
+      "resolved_url": "https://ieee-cog.org/2019/papers/paper_119.pdf",
+      "version": "conference PDF",
+      "downloaded_at_utc": "2026-10-26T15:37:09.750124+00:00"
+    },
+    {
+      "id": "evaluation-functions-2022",
+      "title": "Evolving Evaluation Functions for Collectible Card Game AI",
+      "authors": [
+        "Radoslaw Miernik",
+        "Jakub Kowalski"
+      ],
+      "year": 2022,
+      "venue": "ICAART 2022; arXiv preprint 2021",
+      "doi": "10.5220/0010806900003116",
+      "filename": "2022-evolving-evaluation-functions.pdf",
+      "topic": "单卡与场面特征评分；线性和树状表示；评分参数的对局验证。",
+      "limitation": "LOCM 的规则与特征不同，不能直接移植评分权重。",
+      "priority": "核心，建议第二个阅读",
+      "source_candidates": [
+        "https://www.scitepress.org/Papers/2022/108069/108069.pdf",
+        "https://arxiv.org/pdf/2105.01115"
+      ],
+      "bytes": 400602,
+      "pages": 8,
+      "sha256": "6194d0ce1096a13686ae8dbd2d07449e444487cdb1ad66a676d42c0bb55c79af",
+      "pdf_title": "",
+      "first_page_excerpt": "Evolving Evaluation Functions for Collectible Card Game AI Radosław Miernik and Jakub Kowalski University of Wrocław, Faculty of Mathematics and Computer Science, Poland Keywords: Evolutionary Algorithms, Evaluation Func",
+      "status": "downloaded",
+      "source_url": "https://www.scitepress.org/Papers/2022/108069/108069.pdf",
+      "resolved_url": "https://www.scitepress.org/Papers/2022/108069/108069.pdf",
+      "version": "published conference PDF",
+      "downloaded_at_utc": "2026-10-26T15:36:59.087181+00:00"
+    },
+    {
+      "id": "q-deckrec-2018",
+      "title": "Q-DeckRec: A Fast Deck Recommendation System for Collectible Card Games",
+      "authors": [
+        "Zhengxing Chen",
+        "Christopher Amato",
+        "Truong-Huy D. Nguyen",
+        "Seth Cooper",
+        "Yizhou Sun",
+        "Magy Seif El-Nasr"
+      ],
+      "year": 2018,
+      "venue": "IEEE CIG 2018; arXiv:1806.09771",
+      "filename": "2018-q-deckrec.pdf",
+      "topic": "把构筑视为依赖当前套牌与对手的连续修改和搜索问题。",
+      "limitation": "训练与评价依赖模拟器及代理打法；不提供跨游戏通用单卡分。",
+      "priority": "核心，建议第三个阅读",
+      "source_candidates": [
+        "https://arxiv.org/pdf/1806.09771"
+      ],
+      "bytes": 303238,
+      "pages": 8,
+      "sha256": "b273855e9c125c66b52bd24383343bc87ad3d3c83332105858c00711c9d14743",
+      "pdf_title": "",
+      "first_page_excerpt": "Q-DeckRec: A Fast Deck Recommendation System for Collectible Card Games Zhengxing Chen College of Comp. and Info. Sci. Northeastern University Boston, USA czxttkl@gmail.com Christopher Amato College of Comp. and Info. Sc",
+      "status": "downloaded",
+      "source_url": "https://arxiv.org/pdf/1806.09771",
+      "resolved_url": "https://arxiv.org/pdf/1806.09771",
+      "version": "author preprint on arXiv",
+      "downloaded_at_utc": "2026-10-26T15:36:58.250701+00:00"
+    },
+    {
+      "id": "chaos-cards-2020",
+      "title": "Chaos Cards: Creating Novel Digital Card Games through Grammatical Content Generation and Meta-Based Card Evaluation",
+      "authors": [
+        "Tiannan Chen",
+        "Stephen J. Guy"
+      ],
+      "year": 2020,
+      "venue": "AAAI AIIDE 2020",
+      "doi": "10.1609/aiide.v16i1.7430",
+      "filename": "2020-chaos-cards-meta-based-evaluation.pdf",
+      "topic": "可执行卡牌效果、竞争套牌环境中的模拟评分，以及快速预测。",
+      "limitation": "研究使用作者自己的 Hearthstone 类游戏，需要可靠的游戏实现。",
+      "priority": "核心，后续强度验证参考",
+      "source_candidates": [
+        "https://cdn.aaai.org/ojs/7430/7430-52-10748-1-2-20200923.pdf"
+      ],
+      "bytes": 2092047,
+      "pages": 7,
+      "sha256": "0ad016dc8596d34dda543c5842c313a1523c1420f450d73d1221ae29325e99e6",
+      "pdf_title": "Chaos Cards: Creating Novel Digital Card Games through Grammatical Content Generation and Meta-Based Card Evaluation",
+      "first_page_excerpt": "Proceedings of the Sixteenth AAAI Conference on Artiﬁcial Intelligence and Interactive Digital Entertainment (AIIDE-20) Chaos Cards: Creating Novel Digital Card Games through Grammatical Content Generation and Meta-Based",
+      "status": "downloaded",
+      "source_url": "https://cdn.aaai.org/ojs/7430/7430-52-10748-1-2-20200923.pdf",
+      "resolved_url": "https://cdn.aaai.org/ojs/7430/7430-52-10748-1-2-20200923.pdf",
+      "version": "published conference PDF",
+      "downloaded_at_utc": "2026-10-26T15:37:02.317891+00:00"
+    },
+    {
+      "id": "hearthstone-meta-2019",
+      "title": "Evolving the Hearthstone Meta",
+      "year": 2019,
+      "venue": "IEEE CoG 2019; arXiv:1907.01623",
+      "filename": "2019-evolving-the-hearthstone-meta.pdf",
+      "topic": "打出胜率、抽到胜率和修改费用后的对局影响。",
+      "limitation": "观测条件胜率不等同于替换卡位产生的因果收益。",
+      "priority": "核心，统计指标参考",
+      "source_candidates": [
+        "https://ieee-cog.org/2019/papers/paper_134.pdf",
+        "https://arxiv.org/pdf/1907.01623"
+      ],
+      "bytes": 340555,
+      "pages": 8,
+      "sha256": "0854676b4bba614ed0941dc564a08456ae9bb75120be4a192ed2075dbd75c07e",
+      "pdf_title": "",
+      "first_page_excerpt": "Evolving the Hearthstone Meta Fernando de Mesentier Silva Independent Researcher Rio de Janeiro, Brazil fms2005@gmail.com Matthew C. Fontaine Independent Researcher Vermont, USA tehqin@gmail.com Rodrigo Canaan Game Innov",
+      "status": "downloaded",
+      "source_url": "https://ieee-cog.org/2019/papers/paper_134.pdf",
+      "resolved_url": "https://ieee-cog.org/2019/papers/paper_134.pdf",
+      "version": "conference PDF",
+      "downloaded_at_utc": "2026-10-26T15:37:02.063623+00:00"
+    },
+    {
+      "id": "generalised-representations-2024",
+      "title": "Learning With Generalised Card Representations for Magic: The Gathering",
+      "authors": [
+        "Timo Bertram",
+        "Johannes Furnkranz",
+        "Martin Muller"
+      ],
+      "year": 2024,
+      "venue": "IEEE CoG 2024; arXiv:2407.05879",
+      "filename": "2024-generalised-card-representations.pdf",
+      "topic": "结合数值、类别与文本表示卡牌，支持未知卡牌的选牌预测。",
+      "limitation": "预测玩家选牌不等同于预测胜率或单卡真实强度。",
+      "priority": "补充，卡牌表示参考",
+      "source_candidates": [
+        "https://arxiv.org/pdf/2407.05879"
+      ],
+      "bytes": 6503220,
+      "pages": 8,
+      "sha256": "61c657748000552c73d1ae3f5b5267f20164ac4c0c6a0df17ad6f3cb5a18a9c2",
+      "pdf_title": "",
+      "first_page_excerpt": "Learning With Generalised Card Representations for “Magic: The Gathering” Timo Bertram∗† ∗Dept. of Computer Science Johannes-Kepler Universität Linz, Austria tbertram@faw.jku.at Johannes Fürnkranz ∗† †LIT Artificial Inte",
+      "status": "downloaded",
+      "source_url": "https://arxiv.org/pdf/2407.05879",
+      "resolved_url": "https://arxiv.org/pdf/2407.05879",
+      "version": "author preprint on arXiv",
+      "downloaded_at_utc": "2026-10-26T15:37:04.533021+00:00"
+    },
+    {
+      "id": "draftencoder-2026",
+      "title": "Predicting Drafted Deck Strength for Magic: the Gathering",
+      "authors": [
+        "Tomas Rigaux",
+        "Hisashi Kashima"
+      ],
+      "year": 2026,
+      "venue": "arXiv:2607.04782; paper reports acceptance at CoG 2026",
+      "filename": "2026-predicting-drafted-deck-strength.pdf",
+      "topic": "从卡牌和轮抽上下文预测最终套牌对局表现。",
+      "limitation": "较新的数据驱动方法；依赖大量 MTG 数据，不能直接迁移到符文战场。",
+      "priority": "补充，结果导向的套牌模型参考",
+      "source_candidates": [
+        "https://arxiv.org/pdf/2607.04782"
+      ],
+      "bytes": 476616,
+      "pages": 4,
+      "sha256": "73a471bbe084148dda7564350e9eab71a9ff3f0bc026ea56faf83eca6e0dc0c6",
+      "pdf_title": "Predicting Drafted Deck Strength for \"Magic: the Gathering\"",
+      "first_page_excerpt": "Predicting Drafted Deck Strength for “Magic: the Gathering” Tomas Rigaux Grad. School of Informatics Kyoto University Kyoto, Japan tomas@rigaux.com Hisashi Kashima Grad. School of Informatics Kyoto University Kyoto, Japa",
+      "status": "downloaded",
+      "source_url": "https://arxiv.org/pdf/2607.04782",
+      "resolved_url": "https://arxiv.org/pdf/2607.04782",
+      "version": "author preprint on arXiv",
+      "downloaded_at_utc": "2026-10-26T15:37:04.320690+00:00"
+    }
+  ],
+  "not_downloaded_references": [
+    {
+      "title": "Deep Learning Techniques for Explainable Resource Scales in Collectible Card Games",
+      "year": 2022,
+      "doi": "10.1109/TG.2020.3030742",
+      "source_url": "https://doi.org/10.1109/TG.2020.3030742",
+      "status": "not_downloaded",
+      "reason": "未找到可公开取得的全文 PDF；已保存同一研究路线的 2019 年会议论文。"
+    },
+    {
+      "title": "Deck Building in Collectible Card Games using Genetic Algorithms: A Case Study of Legends of Code and Magic",
+      "year": 2021,
+      "doi": "10.1109/SSCI50451.2021.9659984",
+      "source_url": "https://web.ntnu.edu.tw/~tcchiang/publications/ssci2021a.htm",
+      "status": "not_downloaded",
+      "reason": "作者页面目前仅提供 DOI；未找到开放全文，不以摘要或目录充当论文。"
+    }
+  ]
+}

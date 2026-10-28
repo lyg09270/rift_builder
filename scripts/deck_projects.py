@@ -12,6 +12,7 @@ import os
 import re
 import shutil
 import sys
+import time
 import unicodedata
 import uuid
 from pathlib import Path
@@ -19,23 +20,22 @@ from typing import Any
 
 
 WORKSPACE = Path(__file__).resolve().parents[1]
-SKILL_ROOT = WORKSPACE / ".agents" / "skills" / "riftbound-deck-mvp"
-RIFTBOUND_PATH = SKILL_ROOT / "scripts" / "riftbound.py"
+SUPPORT_PATH = WORKSPACE / "scripts" / "deck_support.py"
 DEFAULT_PROJECTS_ROOT = WORKSPACE / "decks"
 
 
-def load_riftbound() -> Any:
-    spec = importlib.util.spec_from_file_location("riftbound_deck_mvp", RIFTBOUND_PATH)
+def load_deck_support() -> Any:
+    spec = importlib.util.spec_from_file_location("deck_support", SUPPORT_PATH)
     if spec is None or spec.loader is None:
-        raise RuntimeError(f"Cannot load Riftbound CLI: {RIFTBOUND_PATH}")
+        raise RuntimeError(f"Cannot load deck support: {SUPPORT_PATH}")
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     return module
 
 
-RIFTBOUND = load_riftbound()
-DEFAULT_DB = RIFTBOUND.DEFAULT_DB
-DEFAULT_RULES = RIFTBOUND.DEFAULT_RULES
+DECK_SUPPORT = load_deck_support()
+DEFAULT_DB = DECK_SUPPORT.DEFAULT_DB
+DEFAULT_RULES = DECK_SUPPORT.DEFAULT_RULES
 PROJECT_ID_RE = re.compile(r"^[a-z0-9](?:[a-z0-9-]{0,62}[a-z0-9])?$")
 ZONES = ("main_deck", "battlefields", "runes", "sideboard")
 PIPELINE_VERSION = 1
@@ -57,6 +57,18 @@ ENTRY_MODES = ("style_first", "hero_first", "undecided", "imported")
 
 class ProjectError(ValueError):
     pass
+
+
+def replace_directory(source: Path, destination: Path) -> None:
+    """Retry short-lived Windows access/sharing locks without copying over data."""
+    for attempt in range(5):
+        try:
+            os.replace(source, destination)
+            return
+        except PermissionError as error:
+            if getattr(error, "winerror", None) not in (5, 32) or attempt == 4:
+                raise
+            time.sleep(0.05 * (2 ** attempt))
 
 
 def utc_now() -> str:
@@ -217,13 +229,13 @@ def find_project(projects_root: Path, project_id: str, *, active_only: bool = Fa
 
 
 def validate_deck_source(deck_path: str | Path, db_path: str | Path, rules_path: str | Path) -> tuple[dict[str, Any], dict[str, Any], str]:
-    deck = RIFTBOUND.read_deck(deck_path)
-    connection = RIFTBOUND.connect(db_path)
+    deck = DECK_SUPPORT.read_deck(deck_path)
+    connection = DECK_SUPPORT.connect(db_path)
     try:
-        report = RIFTBOUND.validate_deck(deck, connection, RIFTBOUND.load_rules(rules_path))
+        report = DECK_SUPPORT.validate_deck(deck, connection, DECK_SUPPORT.load_rules(rules_path))
         if not report["valid"]:
             raise ProjectError("Deck validation failed:\n" + json.dumps(report, ensure_ascii=False, indent=2))
-        exported = RIFTBOUND.export_riftatlas(deck, connection, True)
+        exported = DECK_SUPPORT.export_riftatlas(deck, connection, True)
     finally:
         connection.close()
     return deck, report, exported
@@ -262,7 +274,7 @@ def ensure_data_version(projects_root: Path, db_path: str | Path, rules_path: st
             }
             atomic_write_json(temporary / "version.json", version)
             try:
-                os.replace(temporary, destination)
+                replace_directory(temporary, destination)
             except FileExistsError:
                 shutil.rmtree(temporary)
         finally:
@@ -288,10 +300,10 @@ def quantities(deck: dict[str, Any], zone: str) -> tuple[dict[str, int], list[st
 
 def deck_diff(before: dict[str, Any] | None, after: dict[str, Any], db_path: str | Path) -> dict[str, Any]:
     previous = before or {}
-    connection = RIFTBOUND.connect(db_path)
+    connection = DECK_SUPPORT.connect(db_path)
     try:
         def card_name(code: str) -> str:
-            return RIFTBOUND.resolve_card(connection, code)["display_name"]
+            return DECK_SUPPORT.resolve_card(connection, code)["display_name"]
 
         fields: dict[str, Any] = {}
         for field in ("name", "rules_profile", "legend", "chosen_champion"):
@@ -445,7 +457,7 @@ def create_project(
         )
         atomic_write_json(temporary / "build-session.json", new_build_session(identifier, imported=True))
         atomic_write_json(temporary / "project.json", manifest)
-        os.replace(temporary, target)
+        replace_directory(temporary, target)
     finally:
         if temporary.exists():
             shutil.rmtree(temporary)
@@ -504,7 +516,7 @@ def start_build_project(
         (temporary / "build-history").mkdir()
         atomic_write_json(temporary / "build-session.json", session)
         atomic_write_json(temporary / "project.json", manifest)
-        os.replace(temporary, target)
+        replace_directory(temporary, target)
     finally:
         if temporary.exists():
             shutil.rmtree(temporary)

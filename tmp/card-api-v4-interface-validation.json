@@ -1,0 +1,16 @@
+{
+  "v4_functions": 60,
+  "migration_rows": 71,
+  "retained": 60,
+  "moved_to_flow": 9,
+  "moved_to_macro": 2,
+  "universal_modify": false,
+  "python_example_calls_checked": 5,
+  "local_links_checked": 1209,
+  "broken_links": [],
+  "current_matches_versioned_api": true,
+  "v4_sha256": "79337a984b495cd9c18bd695669785fcf4ca358ef83f8985f77fc29c5daad788",
+  "v31_archive_sha256": "ab3923ba0ab876d2d3c95c8d6bcf13b0cf8ee0a9829ea504935ee7723a72badf",
+  "source_sha256": "ad521068ff70def757a00ff18f049583e1e5dffdc3e0152515eb90007b54ca05",
+  "scope": "Documentation consistency only; no runtime implementation, test suite, or V4 full-card review."
+}
